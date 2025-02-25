@@ -89,3 +89,8 @@ footer a {
 footer a:hover {
     color: #c90016;
 }
+
+.small-image {
+    width: 300px;
+    height: auto;
+}
