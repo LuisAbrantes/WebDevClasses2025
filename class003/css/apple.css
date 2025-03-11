@@ -1,0 +1,95 @@
+/* Base body styles */
+
+/* Sets the default font family, starting with the Apple system font */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, sans-serif;
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Removes default padding */
+    background-color: #1d1d1f;
+    color: #f5f5f7;
+}
+
+/* Header styling */
+header {
+    background-color: #000000;
+    border-bottom: 1px solid #3a3a3c; /* Adds a subtle border at the bottom of the header */
+    padding: 20px; /* Adds padding around the header content */
+    text-align: center;
+}
+
+/* Header title styling */
+header h1 {
+    margin: 0; /* Removes the default margin of the header title */
+    font-size: 2em; /* 'em' is a relative unit of measurement based on the font size of the parent element */
+    font-weight: 600; /* Sets the font weight to semi-bold */
+    color: #f5f5f7;
+}
+
+/* Navigation link styling */
+nav a {
+    color: #0a84ff;
+    text-decoration: none; /* Removes the default underline from links */
+    margin: 0 10px; /* Adds 0 margin on top and bottom, and 10px margin on left and right */
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    text-decoration: underline; /* Adds an underline to links when hovered over */
+}
+
+/* Main content area */
+main {
+    padding: 20px; /* Adds padding around the main content */
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 20px; /* Adds margin at the bottom of each section */
+}
+
+/* Section heading styling */
+/* Consistent sizing and weight */
+/* Adds subtle border below headings */
+section h2 {
+    font-size: 1.5em; /* Sets the font size of section headings */
+    font-weight: 600; /* Sets the font weight to semi-bold */
+    border-bottom: 1px solid #3a3a3c; /* Defines a bottom border with 1px width, solid style, and dark gray color  */
+    padding-bottom: 10px; /* Adds padding below section headings */
+    margin-bottom: 10px; /* Adds margin below section headings */
+    color: #f5f5f7; /* Sets the text color of section headings */
+}
+
+/* Footer styling */
+/* Black background with top border */
+/* Centers content and uses smaller font */
+footer {
+    /* Sets the background color of the footer to black */
+    background-color: #000000;
+    /* Adds a subtle border at the top of the footer */
+    border-top: 1px solid #3a3a3c;
+    /* Centers the footer content */
+    text-align: center;
+    /* Adds padding around the footer content */
+    padding: 20px;
+    /* Sets the font size of the footer text */
+    font-size: 0.9em;
+    /* Sets the text color of the footer text */
+    color: #f5f5f7;
+}
+
+/* Footer link styling */
+/* Matches navigation link styling */
+footer a {
+    /* Sets the color of footer links to Apple's blue */
+    color: #0a84ff;
+    /* Removes the default underline from footer links */
+    text-decoration: none;
+}
+
+/* Footer link hover effect */
+/* Matches navigation hover effect */
+footer a:hover {
+    /* Adds an underline to footer links when hovered over */
+    text-decoration: underline;
+}
