@@ -40,6 +40,10 @@ nav a:hover {
 
 /* Main content area */
 main {
+    background-image: url(https://logodownload.org/wp-content/uploads/2013/12/apple-logo-1-1.png); /* Adds the background image requested */
+    background-size: contain; /* Ensures the background image fits within the element */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center; /* Centers the background image */
     padding: 20px; /* Adds padding around the main content */
 }
 
