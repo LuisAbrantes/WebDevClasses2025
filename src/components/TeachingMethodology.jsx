@@ -36,38 +36,19 @@ function TeachingMethodology() {
                     <div className="space-y-6">
                         <div className="bg-gray-50 p-4 rounded-lg hover:shadow-md transition-shadow duration-300">
                             <h4 className="font-medium text-lg text-[#A51C30]">
-                                Module 1: Web Fundamentals
+                                1st Semester: Frontend
                             </h4>
                             <p className="text-gray-700 mt-2">
-                                HTML structure, CSS styling, responsive design
-                                principles
+                                Web Fundamentals, HTML structure, CSS styling,
+                                responsive design principles
                             </p>
                         </div>
                         <div className="bg-gray-50 p-4 rounded-lg hover:shadow-md transition-shadow duration-300">
                             <h4 className="font-medium text-lg text-[#A51C30]">
-                                Module 2: Programming Foundations
+                                Module 2: Backend
                             </h4>
                             <p className="text-gray-700 mt-2">
-                                JavaScript basics, DOM manipulation, event
-                                handling
-                            </p>
-                        </div>
-                        <div className="bg-gray-50 p-4 rounded-lg hover:shadow-md transition-shadow duration-300">
-                            <h4 className="font-medium text-lg text-[#A51C30]">
-                                Module 3: Modern Web Development
-                            </h4>
-                            <p className="text-gray-700 mt-2">
-                                React fundamentals, component-based
-                                architecture, state management
-                            </p>
-                        </div>
-                        <div className="bg-gray-50 p-4 rounded-lg hover:shadow-md transition-shadow duration-300">
-                            <h4 className="font-medium text-lg text-[#A51C30]">
-                                Module 4: Final Project
-                            </h4>
-                            <p className="text-gray-700 mt-2">
-                                Applying learned concepts in a complete web
-                                application
+                                NodeJS, DataBase integration...
                             </p>
                         </div>
                     </div>
