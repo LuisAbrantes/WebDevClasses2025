@@ -40,6 +40,10 @@ nav a:hover {
 
 /* Main content area */
 main {
+    background-image: url(https://logodownload.org/wp-content/uploads/2013/12/apple-logo-1-1.png); /* Adds the background image requested */
+    background-size: contain; /* Ensures the background image fits within the element */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center; /* Centers the background image */
     padding: 20px; /* Adds padding around the main content */
 }
 
@@ -49,8 +53,6 @@ section {
 }
 
 /* Section heading styling */
-/* Consistent sizing and weight */
-/* Adds subtle border below headings */
 section h2 {
     font-size: 1.5em; /* Sets the font size of section headings */
     font-weight: 600; /* Sets the font weight to semi-bold */
@@ -61,35 +63,24 @@ section h2 {
 }
 
 /* Footer styling */
-/* Black background with top border */
-/* Centers content and uses smaller font */
 footer {
-    /* Sets the background color of the footer to black */
     background-color: #000000;
-    /* Adds a subtle border at the top of the footer */
-    border-top: 1px solid #3a3a3c;
-    /* Centers the footer content */
+    border-top: 1px solid #3a3a3c; /* Adds a subtle border at the top of the footer */
     text-align: center;
-    /* Adds padding around the footer content */
     padding: 20px;
-    /* Sets the font size of the footer text */
     font-size: 0.9em;
-    /* Sets the text color of the footer text */
     color: #f5f5f7;
 }
 
 /* Footer link styling */
 /* Matches navigation link styling */
 footer a {
-    /* Sets the color of footer links to Apple's blue */
     color: #0a84ff;
-    /* Removes the default underline from footer links */
-    text-decoration: none;
+    text-decoration: none; /* Removes the default underline from footer links */
 }
 
 /* Footer link hover effect */
 /* Matches navigation hover effect */
 footer a:hover {
-    /* Adds an underline to footer links when hovered over */
-    text-decoration: underline;
+    text-decoration: underline; /* Adds an underline to footer links when hovered over */
 }
