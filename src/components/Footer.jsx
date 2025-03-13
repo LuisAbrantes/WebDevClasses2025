@@ -10,7 +10,8 @@ const Footer = () => {
                             WebDev Academy
                         </h3>
                         <p className="text-gray-400 mt-2">
-                            Formando desenvolvedores web com excelência acadêmica e preparação para o mercado.
+                            Formando desenvolvedores web com excelência
+                            acadêmica e preparação para o mercado.
                         </p>
                     </div>
                     <div>
@@ -19,13 +20,28 @@ const Footer = () => {
                         </h3>
                         <ul className="mt-2 space-y-2">
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-white transition-colors">Biblioteca Digital</a>
+                                <a
+                                    href="#"
+                                    className="text-gray-400 hover:text-white transition-colors"
+                                >
+                                    Biblioteca Digital
+                                </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-white transition-colors">Recursos de Aprendizagem</a>
+                                <a
+                                    href="#"
+                                    className="text-gray-400 hover:text-white transition-colors"
+                                >
+                                    Recursos de Aprendizagem
+                                </a>
                             </li>
                             <li>
-                                <a href="#" className="text-gray-400 hover:text-white transition-colors">FAQ</a>
+                                <a
+                                    href="#"
+                                    className="text-gray-400 hover:text-white transition-colors"
+                                >
+                                    FAQ
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -44,7 +60,8 @@ const Footer = () => {
             <div className="border-t border-gray-800 py-6">
                 <div className="container mx-auto px-6 text-center">
                     <p className="text-gray-400">
-                        © {new Date().getFullYear()} WebDev Academy - Curso Técnico
+                        © {new Date().getFullYear()} WebDev Academy - Curso
+                        Técnico
                     </p>
                     <p className="text-xs mt-2 text-gray-500">
                         Todos os direitos reservados

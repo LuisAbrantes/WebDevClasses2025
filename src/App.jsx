@@ -39,7 +39,8 @@ function App() {
                         <div className="w-24 h-1 bg-[#A51C30] mx-auto mb-6"></div>
                         <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
                             Portfólio das aulas de desenvolvimento web do curso
-                            técnico, apresentando conceitos fundamentais e práticas modernas.
+                            técnico, apresentando conceitos fundamentais e
+                            práticas modernas.
                         </p>
                     </section>
 
@@ -65,10 +66,14 @@ function App() {
                             Metodologia de Ensino
                         </h2>
                         <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed mb-6">
-                            Nosso curso combina teoria e prática em um ambiente de aprendizado 
-                            colaborativo, preparando os alunos para os desafios da indústria de tecnologia.
+                            Nosso curso combina teoria e prática em um ambiente
+                            de aprendizado colaborativo, preparando os alunos
+                            para os desafios da indústria de tecnologia.
                         </p>
-                        <a href="#" className="inline-block border-2 border-[#A51C30] text-[#A51C30] px-6 py-3 rounded-md hover:bg-[#A51C30] hover:text-white transition-all font-medium tracking-wide">
+                        <a
+                            href="#"
+                            className="inline-block border-2 border-[#A51C30] text-[#A51C30] px-6 py-3 rounded-md hover:bg-[#A51C30] hover:text-white transition-all font-medium tracking-wide"
+                        >
                             Saiba mais sobre o curso
                         </a>
                     </section>
