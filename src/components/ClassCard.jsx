@@ -6,7 +6,7 @@ const ClassCard = ({ classItem }) => {
             <div className="h-2 bg-[#A51C30] w-full"></div>
             <div className="p-8">
                 <span className="inline-block text-xs font-medium text-gray-500 tracking-widest uppercase mb-2">
-                    Módulo {classItem.id}
+                    Module {classItem.id}
                 </span>
                 <h3 className="text-2xl font-serif font-semibold text-[#A51C30] mb-3">
                     {classItem.title}
@@ -20,7 +20,7 @@ const ClassCard = ({ classItem }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <span>Acessar Aula</span>
+                    <span>Access Class</span>
                     <svg
                         className="ml-2 w-4 h-4"
                         fill="none"

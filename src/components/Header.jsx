@@ -33,15 +33,17 @@ const Header = () => {
                         </svg>
                     </div>
                     <h1 className="text-2xl font-serif tracking-tight">
-                        WebDev{' '}
-                        <span className="font-light italic">Academy</span>
+                        WebDevClasses2025{' '}
+                        <span className="font-light italic">
+                            Luis Henrique Abrantes
+                        </span>
                     </h1>
                 </div>
                 <nav>
                     <ul className="flex space-x-8 text-sm uppercase tracking-widest font-medium">
                         <li>
                             <a
-                                href="#"
+                                href="/"
                                 className="hover:underline hover:underline-offset-4 transition-all"
                             >
                                 Home
@@ -52,7 +54,7 @@ const Header = () => {
                                 href="#"
                                 className="hover:underline hover:underline-offset-4 transition-all"
                             >
-                                Sobre
+                                About
                             </a>
                         </li>
                         <li>
@@ -60,7 +62,7 @@ const Header = () => {
                                 href="#"
                                 className="hover:underline hover:underline-offset-4 transition-all"
                             >
-                                Contato
+                                Contact
                             </a>
                         </li>
                     </ul>
@@ -68,7 +70,7 @@ const Header = () => {
             </div>
             <div className="border-t border-[#C8102E]/20 py-1 bg-[#8C1724]">
                 <div className="container mx-auto px-6 text-sm text-center md:text-right text-white/80">
-                    Curso Técnico em Desenvolvimento Web
+                    Web Development Classes in IFSP-JCR Technical Course
                 </div>
             </div>
         </header>

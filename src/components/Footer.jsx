@@ -10,13 +10,13 @@ const Footer = () => {
                             WebDev Academy
                         </h3>
                         <p className="text-gray-400 mt-2">
-                            Formando desenvolvedores web com excelência
-                            acadêmica e preparação para o mercado.
+                            Training web developers with academic excellence and
+                            industry preparation.
                         </p>
                     </div>
                     <div>
                         <h3 className="text-xl font-serif mb-4 border-b border-[#A51C30] pb-2 inline-block">
-                            Links Úteis
+                            Useful Links
                         </h3>
                         <ul className="mt-2 space-y-2">
                             <li>
@@ -24,7 +24,7 @@ const Footer = () => {
                                     href="#"
                                     className="text-gray-400 hover:text-white transition-colors"
                                 >
-                                    Biblioteca Digital
+                                    Digital Library
                                 </a>
                             </li>
                             <li>
@@ -32,7 +32,7 @@ const Footer = () => {
                                     href="#"
                                     className="text-gray-400 hover:text-white transition-colors"
                                 >
-                                    Recursos de Aprendizagem
+                                    Learning Resources
                                 </a>
                             </li>
                             <li>
@@ -47,12 +47,12 @@ const Footer = () => {
                     </div>
                     <div>
                         <h3 className="text-xl font-serif mb-4 border-b border-[#A51C30] pb-2 inline-block">
-                            Contato
+                            Contact
                         </h3>
                         <address className="text-gray-400 mt-2 not-italic">
-                            <p>Rua dos Desenvolvedores, 123</p>
+                            <p>123 Developers Street</p>
                             <p>São Paulo, SP</p>
-                            <p>contato@webdev.academy</p>
+                            <p>contact@webdev.academy</p>
                         </address>
                     </div>
                 </div>
@@ -60,11 +60,11 @@ const Footer = () => {
             <div className="border-t border-gray-800 py-6">
                 <div className="container mx-auto px-6 text-center">
                     <p className="text-gray-400">
-                        © {new Date().getFullYear()} WebDev Academy - Curso
-                        Técnico
+                        © {new Date().getFullYear()} WebDev Academy - Technical
+                        Course
                     </p>
                     <p className="text-xs mt-2 text-gray-500">
-                        Todos os direitos reservados
+                        All rights reserved
                     </p>
                 </div>
             </div>
