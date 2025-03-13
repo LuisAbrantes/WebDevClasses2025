@@ -45,7 +45,7 @@ function TeachingMethodology() {
                         </div>
                         <div className="bg-gray-50 p-4 rounded-lg hover:shadow-md transition-shadow duration-300">
                             <h4 className="font-medium text-lg text-[#A51C30]">
-                                Module 2: Backend
+                                2nd Semester: Backend
                             </h4>
                             <p className="text-gray-700 mt-2">
                                 NodeJS, DataBase integration...
