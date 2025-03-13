@@ -1,36 +1,12 @@
-# WebDevClasses2025
+# React + Vite
 
-Bem-vindo(a) ao repositório **WebDevClasses2025**! 🚀
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Sobre o Projeto
+Currently, two official plugins are available:
 
-Este repositório foi criado para armazenar os estudos e projetos das aulas de desenvolvimento web que terei durante meu quarto ano do ensino médio no ano de 2025.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Tecnologias Utilizadas
+## Expanding the ESLint configuration
 
-- **HTML**: 93.6%
-- **CSS**: 6.4%
-
-## Estrutura do Repositório
-
-- `/aulas`: Contém os materiais e exercícios das aulas.
-- `/projetos`: Contém os projetos desenvolvidos ao longo do curso.
-- `/recursos`: Contém materiais de apoio e referências.
-
-## Objetivos
-
-1. Aprender os fundamentos de HTML, CSS e JavaScript.
-2. Desenvolver pequenos projetos para praticar os conceitos aprendidos.
-3. Preparar-se para desafios mais avançados no desenvolvimento web.
-
-## Contato
-
-Em caso de dúvidas, sinta-se à vontade para entrar em contato:
-
-- [GitHub](https://github.com/LuisAbrantes)
-- [Portifólio](https://luisabrantes.github.io/luis.hsa/)
-- [Email](mailto:luis.hsa@gmail.com)
-
----
-
-**Nota**: Este repositório é exclusivamente para fins educacionais e de estudo.
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
