@@ -8,21 +8,21 @@ function ClassesList() {
             id: 1,
             title: 'Introduction to HTML l',
             description: 'Fundamentals of structuring web pages',
-            path: 'src/classes/class001/index.html',
+            path: '/classes/class001/index.html',
             date: '2025-01-10'
         },
         {
             id: 2,
             title: 'Introduction to HTML ll',
             description: 'Fundamentals of structuring web pages',
-            path: 'src/classes/class002/index.html',
+            path: '/classes/class002/index.html',
             date: '2025-01-17'
         },
         {
             id: 3,
             title: 'Introduction to CSS',
             description: 'Fundamentals of styling web pages',
-            path: 'src/classes/class003/index.html',
+            path: '/classes/class003/index.html',
             date: '2025-01-24'
         }
     ];
