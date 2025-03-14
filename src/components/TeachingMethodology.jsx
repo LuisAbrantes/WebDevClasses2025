@@ -7,10 +7,6 @@ function TeachingMethodology() {
         setShowPlanning(!showPlanning);
     };
 
-    const handleEmailClick = () => {
-        alert('Email: luis.hsa@gmail.com');
-    };
-
     return (
         <section
             id="teaching-methodology"
@@ -116,12 +112,12 @@ function TeachingMethodology() {
                                     GitHub
                                 </a>{' '}
                                 |{' '}
-                                <span
-                                    className=" cursor-pointer underline"
-                                    onClick={handleEmailClick}
+                                <a
+                                    href="mailto:luis.hsa@gmail.com"
+                                    className="underline"
                                 >
                                     Email
-                                </span>
+                                </a>
                             </p>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Footer = () => {
+
     return (
         <footer className="bg-gray-900 text-white">
             <div className="container mx-auto px-4 sm:px-6 pt-8 sm:pt-12 pb-6 sm:pb-8">
@@ -49,19 +50,33 @@ const Footer = () => {
                         <h3 className="text-lg sm:text-xl font-serif mb-3 sm:mb-4 border-b border-[#A51C30] pb-2 inline-block">
                             Contact
                         </h3>
-                        <address className="text-gray-400 mt-2 not-italic">
-                            <p>123 Developers Street</p>
-                            <p>São Paulo, SP</p>
-                            <p>contact@webdev.academy</p>
-                        </address>
+                        <div className="text-gray-400 mt-2">
+                            <p>
+                                <a
+                                    href="https://luisabrantes.dev"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-gray-400 hover:text-white transition-colors"
+                                >
+                                    My Portfolio →
+                                </a>
+                            </p>
+                            <p className="mt-1">
+                                <a
+                                    href="mailto:luis.hsa@gmail.com"
+                                    className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+                                >
+                                    luis.hsa@gmail.com
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="border-t border-gray-800 py-4 sm:py-6">
                 <div className="container mx-auto px-4 sm:px-6 text-center">
                     <p className="text-gray-400 text-sm sm:text-base">
-                        © {new Date().getFullYear()} WebDev Academy - Technical
-                        Course
+                        © {new Date().getFullYear()} Luis Henrique Abrantes
                     </p>
                     <p className="text-xs mt-2 text-gray-500">
                         All rights reserved
