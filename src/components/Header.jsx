@@ -75,8 +75,6 @@ const Header = () => {
                             <a
                                 href="#teaching-methodology"
                                 className="hover:underline hover:underline-offset-4 transition-all"
-                                target="_blank"
-                                rel="noopener noreferrer"
                             >
                                 Teaching Methodology
                             </a>

@@ -22,7 +22,8 @@ const Footer = () => {
                         <ul className="mt-2 space-y-2">
                             <li>
                                 <a
-                                    href="#"
+                                    href="https://drive.google.com/drive/folders/1MamX2HWmvVdsor8o6_g8NMPlzC6kdH9v?usp=sharing"
+                                    target='_blank'
                                     className="text-gray-400 hover:text-white transition-colors"
                                 >
                                     Digital Library
@@ -33,7 +34,7 @@ const Footer = () => {
                                     href="#"
                                     className="text-gray-400 hover:text-white transition-colors"
                                 >
-                                    Learning Resources
+                                    Learning Resources (empty yet)
                                 </a>
                             </li>
                             <li>
@@ -41,7 +42,7 @@ const Footer = () => {
                                     href="#"
                                     className="text-gray-400 hover:text-white transition-colors"
                                 >
-                                    FAQ
+                                    FAQ (empty yet)
                                 </a>
                             </li>
                         </ul>
