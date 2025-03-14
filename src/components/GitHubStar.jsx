@@ -5,7 +5,7 @@ function GitHubStar() {
     return (
         <section className="mb-10 p-6 bg-[#F7F5F2] rounded-xl border border-gray-300 shadow-sm text-center">
             <h2 className="text-2xl font-serif font-bold text-[#A51C30] mb-4 flex items-center justify-center gap-2">
-                <Star /> Join our Project <Github />
+                <Star /> Support our Project <Github />
             </h2>
             <p className="text-gray-700 mb-6">
                 Dive into our GitHub repository to stay updated with the latest
