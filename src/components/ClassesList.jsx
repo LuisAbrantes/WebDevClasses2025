@@ -5,21 +5,21 @@ function ClassesList() {
     const classes = [
         {
             id: 1,
-            title: 'Introduction to HTML and CSS',
-            description: 'Fundamentals of structuring and styling web pages',
-            path: 'classes/classes001/index.html'
+            title: 'Introduction to HTML l',
+            description: 'Fundamentals of structuring web pages',
+            path: 'src/classes/class001/index.html' 
         },
         {
             id: 2,
-            title: 'Basic JavaScript',
-            description: 'Core concepts of programming with JavaScript',
-            path: 'classes/classes002/index.html'
+            title: 'Introduction to HTML ll',
+            description: 'Fundamentals of structuring web pages',
+            path: 'src/classes/class002/index.html' 
         },
         {
             id: 3,
-            title: 'Frontend Frameworks',
-            description: 'Introduction to React and other modern frameworks',
-            path: 'classes/classes003/index.html'
+            title: 'Introduction to CSS',
+            description: 'Fundamentals of styling web pages',
+            path: 'src/classes/class003/index.html' 
         }
     ];
 
@@ -27,7 +27,7 @@ function ClassesList() {
         <section className="mb-20 bg-white py-10 px-6 rounded-xl shadow-sm border border-gray-100">
             <div className="flex items-center mb-10">
                 <h2 className="text-3xl font-serif font-semibold text-gray-800 mr-4">
-                    Courses
+                    Classes
                 </h2>
                 <div className="flex-grow h-0.5 bg-gradient-to-r from-gray-200 to-white"></div>
             </div>
