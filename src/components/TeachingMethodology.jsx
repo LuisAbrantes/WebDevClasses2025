@@ -8,7 +8,10 @@ function TeachingMethodology() {
     };
 
     return (
-        <section className="mb-20 bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-8 rounded-xl shadow-sm border border-gray-200">
+        <section
+            id="teaching-methodology"
+            className="mb-20 bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-8 rounded-xl shadow-sm border border-gray-200"
+        >
             <h2 className="text-3xl font-serif font-semibold text-[#A51C30] mb-4 text-center">
                 Teaching Methodology
             </h2>

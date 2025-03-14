@@ -90,18 +90,21 @@ const Header = () => {
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="#teaching-methodology"
                                 className="hover:underline hover:underline-offset-4 transition-all"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                                About
+                                Teaching Methodology
                             </a>
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="https://luisabrantes.github.io/luis.hsa/"
                                 className="hover:underline hover:underline-offset-4 transition-all"
+                                target="_blank"
                             >
-                                Contact
+                                My Portfolio
                             </a>
                         </li>
                     </ul>
@@ -126,18 +129,19 @@ const Header = () => {
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="#teaching-methodology"
                                 className="block hover:bg-[#A51C30]/30 py-2 px-3 rounded-md transition-colors"
                             >
-                                About
+                                Teaching Methodology
                             </a>
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="https://luisabrantes.github.io/luis.hsa/"
                                 className="block hover:bg-[#A51C30]/30 py-2 px-3 rounded-md transition-colors"
+                                target="_blank"
                             >
-                                Contact
+                                My Portfolio
                             </a>
                         </li>
                     </ul>
@@ -146,7 +150,7 @@ const Header = () => {
 
             <div className="border-t border-[#C8102E]/20 py-1 bg-[#8C1724]">
                 <div className="container mx-auto px-4 sm:px-6 text-xs sm:text-sm text-center md:text-right text-white/80">
-                    Web Development Classes in IFSP-JCR Technical Course
+                    Web Development Classes at IFSP-JCR Technical Course
                 </div>
             </div>
         </header>
