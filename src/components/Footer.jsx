@@ -54,7 +54,7 @@ const Footer = () => {
                         <div className="text-gray-400 mt-2">
                             <p>
                                 <a
-                                    href="https://luisabrantes.dev"
+                                    href="https://luisabrantes.github.io/luis.hsa/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-gray-400 hover:text-white transition-colors"
