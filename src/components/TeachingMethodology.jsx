@@ -7,6 +7,10 @@ function TeachingMethodology() {
         setShowPlanning(!showPlanning);
     };
 
+    const handleEmailClick = () => {
+        alert('Email: luis.hsa@gmail.com');
+    };
+
     return (
         <section
             id="teaching-methodology"
@@ -52,6 +56,72 @@ function TeachingMethodology() {
                             </h4>
                             <p className="text-gray-700 mt-2">
                                 NodeJS, DataBase integration...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {showPlanning && (
+                <div className="mt-10 text-left bg-white p-8 rounded-xl shadow-lg max-w-3xl mx-auto transition-all duration-500 ease-in-out transform opacity-100 translate-y-0">
+                    <h3 className="text-2xl font-semibold text-gray-800 mb-6 border-b border-gray-200 pb-3">
+                        Professors
+                    </h3>
+                    <div className="space-y-6">
+                        <div className="bg-gray-50 p-4 rounded-lg hover:shadow-md transition-shadow duration-300">
+                            <h4 className="font-medium text-lg text-[#A51C30]">
+                                Mr. Sostenes Gomes
+                            </h4>
+                            <p className="text-gray-700 mt-2">
+                                Portfolio | Linkedin | GitHub | Email
+                            </p>
+                        </div>
+                        <div className="bg-gray-50 p-4 rounded-lg hover:shadow-md transition-shadow duration-300">
+                            <h4 className="font-medium text-lg text-[#A51C30]">
+                                Mrs. Ariadne
+                            </h4>
+                            <p className="text-gray-700 mt-2">
+                                Portfolio | Linkedin | GitHub | Email
+                            </p>
+                        </div>
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-6 border-b border-gray-200 pb-3">
+                            Class Representative (Author)
+                        </h3>
+                        <div className="bg-gray-50 p-4 rounded-lg hover:shadow-md transition-shadow duration-300">
+                            <h4 className="font-medium text-lg text-[#A51C30]">
+                                Mr. Luis Abrantes
+                            </h4>
+                            <p className="text-gray-700 mt-2">
+                                <a
+                                    href="https://luisabrantes.github.io/luis.hsa/"
+                                    target="_blank"
+                                    className="underline"
+                                >
+                                    Portfolio
+                                </a>{' '}
+                                |{' '}
+                                <a
+                                    href="https://www.linkedin.com/in/luishenriqueabrantes/"
+                                    target="_blank"
+                                    className="underline"
+                                >
+                                    Linkedin
+                                </a>{' '}
+                                |{' '}
+                                <a
+                                    href="https://github.com/LuisAbrantes"
+                                    target="_blank"
+                                    className="underline"
+                                >
+                                    GitHub
+                                </a>{' '}
+                                |{' '}
+                                <span
+                                    className=" cursor-pointer underline"
+                                    onClick={handleEmailClick}
+                                >
+                                    Email
+                                </span>
                             </p>
                         </div>
                     </div>
