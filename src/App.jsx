@@ -4,6 +4,7 @@ import Introduction from './components/Introduction';
 import ClassesList from './components/ClassesList';
 import TeachingMethodology from './components/TeachingMethodology';
 import Footer from './components/Footer';
+import GitHubStar from './components/GitHubStar';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <main className="flex-grow container mx-auto px-6 py-12">
                 <div className="max-w-5xl mx-auto">
                     <Introduction />
+                    <GitHubStar />
                     <ClassesList />
                     <TeachingMethodology />
                 </div>

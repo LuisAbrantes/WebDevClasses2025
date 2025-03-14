@@ -1,4 +1,5 @@
 import React from 'react';
+import { ArrowRight } from 'lucide-react';
 
 const ClassCard = ({ classItem }) => {
     return (
@@ -26,19 +27,7 @@ const ClassCard = ({ classItem }) => {
                     rel="noopener noreferrer"
                 >
                     <span>Access Class</span>
-                    <svg
-                        className="ml-2 w-4 h-4"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        />
-                    </svg>
+                    <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
             </div>
         </div>
