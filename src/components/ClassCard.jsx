@@ -5,9 +5,14 @@ const ClassCard = ({ classItem }) => {
         <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all hover:translate-y-[-5px] border border-gray-100 group">
             <div className="h-2 bg-[#A51C30] w-full"></div>
             <div className="p-8">
-                <span className="inline-block text-xs font-medium text-gray-500 tracking-widest uppercase mb-2">
-                    Module {classItem.id}
-                </span>
+                <div className="flex justify-between items-center mb-2">
+                    <span className="inline-block text-xs font-medium text-gray-500 tracking-widest uppercase">
+                        Module {classItem.id}
+                    </span>
+                    <span className="inline-block text-xs font-medium text-gray-500">
+                        Date: {classItem.date}
+                    </span>
+                </div>
                 <h3 className="text-2xl font-serif font-semibold text-[#A51C30] mb-3">
                     {classItem.title}
                 </h3>
