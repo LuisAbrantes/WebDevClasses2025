@@ -66,7 +66,7 @@ function TeachingMethodology() {
                     <div className="space-y-6">
                         <div className="bg-gray-50 p-4 rounded-lg hover:shadow-md transition-shadow duration-300">
                             <h4 className="font-medium text-lg text-[#A51C30]">
-                                Mr. Sostenes Gomes
+                                Mr. Sostenes Pereira Gomes
                             </h4>
                             <p className="text-gray-700 mt-2">
                                 Portfolio | Linkedin | GitHub | Email
@@ -85,7 +85,7 @@ function TeachingMethodology() {
                         </h3>
                         <div className="bg-gray-50 p-4 rounded-lg hover:shadow-md transition-shadow duration-300">
                             <h4 className="font-medium text-lg text-[#A51C30]">
-                                Mr. Luis Abrantes
+                                Mr. Luis Henrique Abrantes
                             </h4>
                             <p className="text-gray-700 mt-2">
                                 <a
