@@ -1,0 +1,75 @@
+body {
+    background-image: url(https://media.istockphoto.com/id/696932052/pt/foto/philadelphia-pennsylvania-usa.jpg?s=2048x2048&w=is&k=20&c=4f2qIeeL9-4vsXVaiNq2rG7nmaCbahc2ZXOrH55-AjE=);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: Arial;
+    color: blue;
+    text-align: center;
+}
+
+p {
+    font-family: Arial;
+    font-size: 18px;
+    color: gray;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#header {
+    text-align: center;
+    font-size: 24px;
+}
+
+.box {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+}
+
+li {
+    padding: 10px;
+}
+
+li:nth-child(odd) {
+    background-color: #eee;
+}
+
+button:hover {
+    transition: 1.53s;
+    background-color: red;
+}
+
+p::first-letter {
+    color: red;
+    font-size: 2em;
+}
+
+.content {
+    background: linear-gradient(to right, black, blue);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Cascading and Inheritance Example */
+.parent {
+    color: green;
+    font-size: 20px;
+}
+
+.parent .child {
+    font-size: inherit;
+    color: inherit;
+}
