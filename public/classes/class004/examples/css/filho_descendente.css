@@ -1,0 +1,15 @@
+/* 🔹 Seletor Descendente (Espaço) */
+.container p {
+    color: blue;
+    font-weight: bold;
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+/* 🔹 Seletor Filho (>) */
+.parent > p {
+    color: red;
+    font-weight: bold;
+    border: 2px solid red;
+    padding: 10px;
+}

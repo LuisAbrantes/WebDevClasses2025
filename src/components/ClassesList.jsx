@@ -29,7 +29,7 @@ function ClassesList() {
             id: 4,
             title: 'Enhancing CSS skills',
             description:
-                'Descendant Selector, Child Selector, Adjacent Siblings, General Siblings, Universal Selector, Pseudoclasses, Pseudoelements, Colors Definitions, Box Model',
+                'Descendant Selector, Child Selector, Adjacent Siblings, General Siblings, Universal Selector, Pseudoclasses, Pseudoelements, Colors Definitions, Box Model, Positions',
             path: '/classes/class004/index.html',
             date: '2025-03-17'
         }

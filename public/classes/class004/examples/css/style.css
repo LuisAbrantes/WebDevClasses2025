@@ -1,0 +1,17 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    color: blue;
+    font-size: 18px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}

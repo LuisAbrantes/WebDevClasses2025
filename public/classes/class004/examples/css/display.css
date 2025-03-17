@@ -1,0 +1,27 @@
+.block {
+    display: block;
+    background-color: lightblue;
+    padding: 10px;
+}
+.inline {
+    display: inline;
+    background-color: lightgreen;
+    padding: 5px;
+}
+.flex-container {
+    display: flex;
+    gap: 5px;
+}
+.flex-item {
+    background-color: lightcoral;
+    padding: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.grid-item {
+    background-color: lightyellow;
+    padding: 10px;
+}

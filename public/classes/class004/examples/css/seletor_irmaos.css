@@ -1,0 +1,15 @@
+/* 🔹 Seletor de Irmão Adjacente (+) */
+h2 + p {
+    color: blue;
+    font-weight: bold;
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+/* 🔹 Seletor de Irmãos Gerais (~) */
+h2 ~ p {
+    color: red;
+    font-style: italic;
+    border: 2px dashed red;
+    padding: 10px;
+}

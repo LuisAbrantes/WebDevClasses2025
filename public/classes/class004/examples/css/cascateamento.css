@@ -1,0 +1,19 @@
+/* Regra de tag (parágrafo) */
+p {
+  color: blue; /* A cor padrão dos parágrafos */
+}
+
+/* Regra de classe */
+.classe {
+  color: green; /* A cor para os parágrafos com a classe "classe" */
+}
+
+/* Regra de ID */
+#identificador {
+  color: orange; /* A cor para o parágrafo com o ID "identificador" */
+}
+
+/* Regra com !important */
+p { 
+  color: purple !important; /* Esta regra tem maior peso devido ao uso do !important */
+}

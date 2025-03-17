@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor Descendente vs Seletor Filho</title>
+
+    <!-- Linkando o CSS Externo -->
+    <link rel="stylesheet" href="css/filho_descendente.css">
+</head>
+<body>
+
+    <h1>Exemplo de Seletor Descendente e Seletor Filho</h1>
+
+    <div class="container">
+        <p>Este parágrafo está dentro de `.container` e será estilizado pelo **seletor descendente**.</p>
+
+        <div class="sub-container">
+            <p>Este parágrafo está dentro de `.sub-container`, que também está dentro de `.container`.</p>
+        </div>
+    </div>
+	
+	<p>Este parágrafo não está dentro de `.container`, logo não será estilizado.</p>
+
+    <div class="parent">
+        <p>Este parágrafo será estilizado pelo **seletor filho (`>`)**.</p>
+
+        <div class="child">
+            <p>Este parágrafo NÃO será afetado pelo seletor filho, pois está dentro de `.child`.</p>
+        </div>
+    </div>
+
+</body>
+</html>

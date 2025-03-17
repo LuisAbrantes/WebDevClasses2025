@@ -1,0 +1,13 @@
+.fonte1 {
+font-family: Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.fonte2 {
+	font-family: 'Times New Roman', serif;
+	font-size: 18px;
+	font-weight: normal;
+	text-align: left;
+}

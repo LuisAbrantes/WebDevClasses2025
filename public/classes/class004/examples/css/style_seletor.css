@@ -1,0 +1,36 @@
+/* Seletor de TAG: Estiliza todos os <p> */
+p {
+    color: blue;
+    font-size: 18px;
+}
+
+/* Seletor de CLASSE: Estiliza qualquer elemento com class="destaque" */
+.destaque {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Seletor de ID: Estiliza um único elemento com id="especial" */
+#especial {
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Outro exemplo de classe para botões */
+.botao {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Seletor de Pseudoclasse - altera a aparência do botão quando o mouse está sobre ele */
+.botao:hover {
+    background-color: darkgreen;
+}

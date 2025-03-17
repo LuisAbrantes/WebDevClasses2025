@@ -1,0 +1,25 @@
+/* Pseudoelemento ::before */
+h1::before {
+  content: "🔔 "; /* Adiciona um ícone antes do título */
+  font-size: 24px;
+}
+
+/* Pseudoelemento ::after */
+p::after {
+  content: "\1F9D0"; /* Adiciona um ícone após o parágrafo */
+  font-size: 24px;
+  color: #FF5733;
+}
+
+/* Pseudoelemento ::first-letter */
+p::first-letter {
+  font-size: 2em; /* Aumenta o tamanho da primeira letra do parágrafo */
+  font-weight: bold;
+  color: #FF5733;
+}
+
+/* Pseudoelemento ::first-line */
+p::first-line {
+  font-style: italic; /* Deixa a primeira linha do parágrafo em itálico */
+  color: #0066cc;
+}

@@ -1,0 +1,7 @@
+.relative {
+    position: relative;
+    top: 20px;  /* Move o elemento 20px para baixo */
+    left: 30px; /* Move o elemento 30px para a direita */
+    background-color: lightblue;
+    padding: 10px;
+}

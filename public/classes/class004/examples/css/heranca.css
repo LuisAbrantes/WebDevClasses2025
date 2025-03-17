@@ -1,0 +1,35 @@
+/* Propriedades Herdáveis */
+.container {
+  color: blue; /* A cor será herdada pelos filhos */
+  font-family: 'Arial', sans-serif; /* A fonte será herdada pelos filhos */
+  visibility: visible; /* A visibilidade será herdada pelos filhos */
+  background-color: lightgray; /* Cor de fundo para demonstrar que o fundo também não é herdado */
+}
+
+.paragrafo {
+  margin: 20px; /* Esta propriedade não será herdada, a não ser que seja explicitamente configurada no elemento filho */
+  padding: 15px; /* Esta propriedade não será herdada */
+  border: 2px solid black; /* Esta propriedade não será herdada */
+  background-color: yellow; /* Cor de fundo para mostrar claramente a diferença */
+}
+
+/* Propriedades Não Herdáveis */
+.nao-herdado {
+  background-color: yellow; /* Propriedade não herdável */
+  margin: 30px; /* A margin não será herdada, a menos que configurada no elemento filho */
+  padding: 10px; /* A padding não será herdada */
+}
+
+.demonstracao {
+  margin-top: 30px;
+}
+
+.com-margin-padding {
+  margin: 40px;  /* Aplicando margin diretamente */
+  padding: 20px; /* Aplicando padding diretamente */
+  background-color: pink; /* Apenas para diferenciação */
+}
+
+.sem-margin-padding {
+  background-color: lightblue; /* Apenas para diferenciação */
+}

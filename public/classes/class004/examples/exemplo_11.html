@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Herança no CSS</title>
+  <link rel="stylesheet" href="css/heranca.css">
+</head>
+<body>
+
+  <h1>Exemplo de Herança no CSS</h1>
+
+  <div class="container">
+    <p class="paragrafo">Este parágrafo herda a cor e a fonte da classe pai (.container).</p>
+    <p class="paragrafo">Outro parágrafo, também herdando a cor e a fonte da classe pai.</p>
+  </div>
+
+  <div class="nao-herdado">
+    <p>Este parágrafo NÃO herda a margem, o padding e a cor da classe pai (.container).</p>
+  </div>
+  
+  <div class="demonstracao">
+    <p class="com-margin-padding">Este parágrafo tem margin e padding aplicados diretamente, e isso NÃO é herdado.</p>
+    <p class="sem-margin-padding">Este parágrafo não tem margin e padding aplicados diretamente, então não é afetado.</p>
+  </div>
+
+</body>
+</html>

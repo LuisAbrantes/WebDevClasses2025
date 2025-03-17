@@ -1,0 +1,23 @@
+body {
+    background-color: lightgray;
+}
+
+/* Estilo para o box model */
+.box-model {
+    background-color: lightblue;
+    background-image: url('imagem.jpg');
+    background-size: cover;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 30px;
+    width: 300px;
+    text-align: center;
+}
+/* seletor descendente */
+.box-model h2 {
+    font-size: 24px;
+}
+
+.box-model p {
+    font-size: 18px;
+}

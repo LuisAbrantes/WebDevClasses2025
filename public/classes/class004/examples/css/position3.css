@@ -1,0 +1,14 @@
+.container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+}
+
+.absolute {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-color: lightcoral;
+    padding: 10px;
+}

@@ -1,0 +1,27 @@
+/* Definindo a cor de fundo */
+.background-example {
+    background-color: lightblue; /* Cor de fundo azul claro */
+    width: 300px; /* Largura do elemento */
+    height: 200px; /* Altura do elemento */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px; /* Espaçamento externo */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* O ponto (.) no CSS é usado para referenciar classes. */
+/* Quando duas ou mais classes são escritas juntas sem espaço (como .classe1.classe2), */ 
+/* significa que o seletor só se aplicará aos elementos que possuem ambas as classes simultaneamente. */
+
+/* Definindo uma imagem de fundo e evitando repetição */
+.background-example.imagem-repetir {
+    background-image: url('../img/fundo2.jpg'); /* Definindo uma imagem como fundo */
+    background-repeat: no-repeat; /* Evitar repetição da imagem */
+    background-size: contain; /* A imagem será redimensionada para caber na área */
+}
+
+/* Definindo uma imagem de fundo com tamanho ajustado para cobrir o elemento */
+.background-example.imagem-cobrir {
+    background-image: url('../img/fundo1.jpg');
+    background-size: cover; /* A imagem cobre toda a área do elemento */
+    background-position: center; /* Centraliza a imagem */
+}

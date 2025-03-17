@@ -1,0 +1,52 @@
+/* 🔹 Pseudoclasse :hover - Quando o mouse passa sobre o botão */
+.botao {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.botao:hover { /* Altera o estilo quando o mouse passa sobre um botão */
+    background-color: darkgreen;
+    transform: scale(1.1); /* O botão aumenta de tamanho (scale(1.1)) e muda para verde escuro. */
+}
+
+/* 🔹 Pseudoclasse :focus - Quando o campo de texto recebe foco */
+.campo-texto {
+    width: 200px;
+    padding: 8px;
+    border: 2px solid gray;
+    font-size: 16px;
+}
+
+.campo-texto:focus { /* Aplica estilo quando um campo de texto recebe foco (clicado). */
+	/* A borda fica azul e o fundo muda para amarelo claro. */
+    border-color: blue;
+    background-color: lightyellow;
+    outline: none; /* remove o contorno padrão que os navegadores aplicam automaticamente a elementos interativos quando recebem foco */
+}
+
+/* 🔹 Pseudoclasse :first-child - Aplica estilo ao primeiro item da lista */
+.lista li:first-child {
+    font-weight: bold;
+    color: red;
+}
+
+/* 🔹 Pseudoclasse :last-child - Aplica estilo ao último item da lista */
+.lista li:last-child {
+    font-weight: bold;
+    color: blue;
+}
+
+/* 🔹 Pseudoclasse :nth-child(odd) - Aplica estilo a itens ímpares */
+.lista li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+/* 🔹 Pseudoclasse :nth-child(even) - Aplica estilo a itens pares */
+.lista li:nth-child(even) {
+    background-color: #d0d0d0;
+}

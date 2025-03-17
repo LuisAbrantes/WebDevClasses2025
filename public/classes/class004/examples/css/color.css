@@ -1,0 +1,19 @@
+.cor-nome {
+    color: red;
+}
+.cor-hex {
+    color: #FF5733;
+}
+.cor-rgb {
+    color: rgb(255, 87, 51);
+}
+
+.cor-rgba {
+    color: rgba(255, 87, 51, 0.5); /* 50% de transparência */
+}
+.cor-hsl {
+    color: hsl(9, 100%, 60%);
+}
+.cor-hsla {
+	color: hsla(9, 100%, 60%, 0.5); /* 50% de transparência */
+}
