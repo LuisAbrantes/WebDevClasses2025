@@ -25,6 +25,8 @@ h1 {
     box-sizing: border-box; /* Added to include padding in total width */
 }
 
+
+
 #containerLeft {
     float: left;
     background-color: #041e42;
@@ -64,4 +66,10 @@ img{
     height: auto;
     margin: 0px;
     padding: 0px;
+}
+
+img:hover{
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
