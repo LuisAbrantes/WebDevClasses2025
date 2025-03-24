@@ -32,6 +32,13 @@ function ClassesList() {
                 'Descendant Selector, Child Selector, Adjacent Siblings, General Siblings, Universal Selector, Pseudoclasses, Pseudoelements, Colors Definitions, Box Model, Positions',
             path: '/classes/class004/index.html',
             date: '2025-03-17'
+        },
+        {
+            id: 5,
+            title: 'Responsive Web Design',    
+            description: 'Learn to create responsive layouts using CSS techniques',
+            path: '/classes/class005/index.html',
+            date: '2025-03-24'
         }
     ];
 

@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+}
+
+h1{
+    position: relative;
+    background-color: #041E42 ;
+    width: 100%;
+    margin-top: 0px;
+    z-index: 1;
+    color: aliceblue;
+}
+
+#containerLeft{
+    position: fixed;
+    background-color: #041E42;
+    color: aliceblue;
+    width: 50%;
+    height: 100%;
+    left: 0;
+
+}
+
+#containerRight{
+    position: fixed;
+    background-color: #9b1c2c;
+    color: aliceblue;
+    width: 50%;
+    height: 100%;
+    right: 0;
+}
