@@ -34,7 +34,7 @@ h1 {
 }
 
 #containerRight {
-    float: left;
+    float: right;
     background-color: #9b1c2c;
     color: aliceblue;
     width: 50%; /* Adjusted to 50% */
