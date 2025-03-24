@@ -36,7 +36,7 @@ function ClassesList() {
         {
             id: 5,
             title: 'Responsive Web Design',    
-            description: 'Learn to create responsive layouts using CSS techniques',
+            description: 'Learn to create responsive layouts using CSS techniques (float feature) + blockquote tag',
             path: '/classes/class005/index.html',
             date: '2025-03-24'
         }

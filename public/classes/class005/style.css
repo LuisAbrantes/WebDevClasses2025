@@ -1,31 +1,56 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+* {
     margin: 0px;
+    font-family: Inter;
 }
 
-h1{
+a {
+    text-decoration: none;
+    color: #9b1c2c;
+}
+
+h1 {
     position: relative;
-    background-color: #041E42 ;
+    background-color: #041e42;
     width: 100%;
     margin-top: 0px;
     z-index: 1;
     color: aliceblue;
+    padding: 1%;
+    box-sizing: border-box; /* Added to include padding in total width */
 }
 
-#containerLeft{
-    position: fixed;
-    background-color: #041E42;
+#containerLeft {
+    float: left;
+    background-color: #041e42;
     color: aliceblue;
-    width: 50%;
-    height: 100%;
-    left: 0;
-
+    width: 50%; /* Adjusted to 50% */
+    min-height: 100vh;
+    margin: 0;
+    padding: 1%;
+    text-align: justify;
+    box-sizing: border-box; /* Added to include padding in total width */
 }
 
-#containerRight{
-    position: fixed;
+#containerRight {
+    float: left;
     background-color: #9b1c2c;
     color: aliceblue;
-    width: 50%;
-    height: 100%;
-    right: 0;
+    width: 50%; /* Adjusted to 50% */
+    min-height: 100vh;
+    margin: 0;
+    padding: 1%;
+    text-align: justify;
+    box-sizing: border-box; /* Added to include padding in total width */
+}
+
+blockquote {
+    float: right;
+    width: 200px;
+    margin: 0px;
+    margin-left: 15px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    padding: 5px;
 }
