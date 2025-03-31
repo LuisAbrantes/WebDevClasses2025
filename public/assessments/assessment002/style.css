@@ -1,11 +1,78 @@
-/* @media only screen and (orientation: landscape){
-    body{
-        background-color: blueviolet;
-    }
-}
- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 
+* {
+    margin: 0px;
+    font-family: Inter;
+}
+
+body{
+    background-color: #9b1c2c;
+}
+
+a {
+    text-decoration: none;
+    color: #9b1c2c;
+}
+
+h1 {
+    position: relative;
+    background-color: #041e42;
+    width: 100%;
+    margin-top: 0px;
+    z-index: 1;
+    color: aliceblue;
+    padding: 1%;
+    box-sizing: border-box; /* Added to include padding in total width */
+}
+
+
+
+#containerLeft {
+    float: left;
+    background-color: #041e42;
+    color: aliceblue;
+    width: 50%; /* Adjusted to 50% */
+    min-height: 100vh;
+    margin: 0;
+    padding: 1%;
+    text-align: justify;
+    box-sizing: border-box; /* Added to include padding in total width */
+}
+
+#containerRight {
+    float: right;
+    background-color: #9b1c2c;
+    color: aliceblue;
+    width: 50%; /* Adjusted to 50% */
+    min-height: 100vh;
+    margin: 0;
+    padding: 1%;
+    text-align: justify;
+    box-sizing: border-box; /* Added to include padding in total width */
+}
+
+blockquote {
+    float: right;
+    width: 200px;
+    margin: 0px;
+    margin-left: 15px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    padding: 5px;
+}
+
+img{
+    width: 50%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+img:hover{
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
 
 * {
     box-sizing: border-box;
@@ -134,7 +201,7 @@ body {
 }
 
 li {
-    background-color: aqua;
+    background-color: #041e42;
     margin: 1%;
     padding: 5px;
     border-radius: 5px; 
@@ -143,5 +210,5 @@ li {
 }
 
 li:hover {
-    background-color: lightblue;
+    background-color: #d9534f;
 }
