@@ -40,6 +40,14 @@ function ClassesList() {
                 'Learn to create responsive layouts using CSS techniques (float feature) + blockquote tag + typographical scale',
             path: '/classes/class005/index.html',
             date: '2025-03-24'
+        },
+        {
+            id: 6,
+            title: 'Responsive Web Design ll',
+            description:
+                'Learn to create responsive layouts using CSS techniques: @media queries - min/max-width, orientation, 12cols grid system, mobile-first approach - first test content', 
+            path: '/classes/class006/index.html',
+            date: '2025-03-31'
         }
     ];
 
