@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import Introduction from './components/Introduction';
 import ClassesList from './components/ClassesList';
+import AssessmentsList from './components/AssessmentsList';
 import TeachingMethodology from './components/TeachingMethodology';
 import Footer from './components/Footer';
 import GitHubStar from './components/GitHubStar';
@@ -16,6 +17,7 @@ function App() {
                     <Introduction />
                     <GitHubStar />
                     <ClassesList />
+                    <AssessmentsList />
                     <TeachingMethodology />
                 </div>
             </main>
