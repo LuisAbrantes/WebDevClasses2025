@@ -51,15 +51,44 @@
 
         <main class="main">
             <section class="welcome">
-                <h1>Welcome to <span>FlexSite</span></h1>
+                <h1>Welcome to <span>FlexSite - To do List</span></h1>
                 <p>A website built entirely with Flexbox 💪</p>
             </section>
+            <div class="todo-section">
+                <div class="todo-input-container">
+                    <input
+                        type="text"
+                        placeholder="Enter a new task..."
+                        id="input"
+                        class="todo-input"
+                    />
+                    <button id="addbutton" class="add-button">
+                        <i class="fas fa-plus"></i> Add Task
+                    </button>
+                </div>
 
-            <section class="cards">
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
-                <div class="card">Card 3</div>
-            </section>
+                <div class="todo-stats">
+                    <span id="total-tasks">Total: 0</span>
+                    <span id="completed-tasks">Completed: 0</span>
+                    <span id="pending-tasks">Pending: 0</span>
+                </div>
+
+                <div id="listodo" class="todo-list-container">
+                    <!-- Tasks will be added here dynamically -->
+                </div>
+
+                <div class="todo-actions">
+                    <button
+                        id="clear-completed"
+                        class="action-button clear-completed"
+                    >
+                        <i class="fas fa-trash"></i> Clear Completed
+                    </button>
+                    <button id="clear-all" class="action-button clear-all">
+                        <i class="fas fa-trash-alt"></i> Clear All
+                    </button>
+                </div>
+            </div>
         </main>
 
         <footer class="footer">
