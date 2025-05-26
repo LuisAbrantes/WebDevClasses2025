@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript DOM Manipulation - Interactive Learning</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                min-height: 100vh;
+                color: #333;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .header {
+                text-align: center;
+                margin-bottom: 50px;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                border-radius: 20px;
+                padding: 40px;
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            }
+
+            .header h1 {
+                font-size: 3.5rem;
+                color: white;
+                margin-bottom: 10px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+
+            .header p {
+                font-size: 1.3rem;
+                color: rgba(255, 255, 255, 0.9);
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .demo-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 30px;
+                margin-bottom: 50px;
+            }
+
+            .demo-card {
+                background: white;
+                border-radius: 15px;
+                padding: 30px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .demo-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            }
+
+            .demo-card h3 {
+                color: #764ba2;
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+                border-bottom: 2px solid #667eea;
+                padding-bottom: 10px;
+            }
+
+            .demo-card p {
+                margin-bottom: 20px;
+                color: #666;
+                line-height: 1.6;
+            }
+
+            .btn {
+                background: linear-gradient(45deg, #667eea, #764ba2);
+                color: white;
+                border: none;
+                padding: 12px 25px;
+                border-radius: 25px;
+                cursor: pointer;
+                font-size: 1rem;
+                transition: all 0.3s ease;
+                margin: 5px;
+            }
+
+            .btn:hover {
+                transform: scale(1.05);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            }
+
+            .input-group {
+                margin: 15px 0;
+            }
+
+            .input-group input {
+                padding: 10px;
+                border: 2px solid #ddd;
+                border-radius: 8px;
+                font-size: 1rem;
+                width: 200px;
+                margin-right: 10px;
+            }
+
+            .output {
+                background: #f8f9fa;
+                border: 2px solid #667eea;
+                border-radius: 8px;
+                padding: 15px;
+                margin: 15px 0;
+                min-height: 50px;
+                font-weight: bold;
+                color: #764ba2;
+            }
+
+            .color-demo {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin: 20px auto;
+                transition: all 0.5s ease;
+                border: 3px solid #333;
+            }
+
+            .list-demo {
+                max-height: 200px;
+                overflow-y: auto;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 10px;
+            }
+
+            .list-item {
+                background: #f0f0f0;
+                margin: 5px 0;
+                padding: 10px;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+
+            .list-item:hover {
+                background: #667eea;
+                color: white;
+                transform: translateX(10px);
+            }
+
+            .remove-btn {
+                background: #dc3545;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 3px;
+                cursor: pointer;
+                float: right;
+                font-size: 0.8rem;
+            }
+
+            .footer {
+                text-align: center;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                border-radius: 20px;
+                padding: 30px;
+                color: white;
+            }
+
+            .code-snippet {
+                background: #1e1e1e;
+                color: #f8f8f2;
+                padding: 15px;
+                border-radius: 8px;
+                font-family: 'Courier New', monospace;
+                font-size: 0.9rem;
+                margin: 10px 0;
+                overflow-x: auto;
+            }
+
+            .highlight {
+                background: yellow;
+                padding: 2px 4px;
+                border-radius: 3px;
+                animation: pulse 1s infinite;
+            }
+
+            @keyframes pulse {
+                0% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0.5;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .header h1 {
+                    font-size: 2.5rem;
+                }
+
+                .demo-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .container {
+                    padding: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>🚀 JavaScript DOM Manipulation</h1>
+                <p>
+                    Explore the power of JavaScript to dynamically modify web
+                    pages. Learn how to interact with HTML elements, change
+                    styles, and create interactive experiences!
+                </p>
+            </div>
+
+            <div class="demo-grid">
+                <!-- Text Manipulation Demo -->
+                <div class="demo-card">
+                    <h3>📝 Text Content Manipulation</h3>
+                    <p>Change text content dynamically using JavaScript</p>
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            id="textInput"
+                            placeholder="Enter new text..."
+                        />
+                        <button class="btn" onclick="changeText()">
+                            Change Text
+                        </button>
+                    </div>
+                    <div class="output" id="textOutput">
+                        Original text that will be changed
+                    </div>
+                    <div class="code-snippet">
+                        document.getElementById('textOutput').textContent =
+                        newText;
+                    </div>
+                </div>
+
+                <!-- Style Manipulation Demo -->
+                <div class="demo-card">
+                    <h3>🎨 Style Manipulation</h3>
+                    <p>Modify CSS properties and create visual effects</p>
+                    <button class="btn" onclick="changeColor()">
+                        Random Color
+                    </button>
+                    <button class="btn" onclick="changeSize()">
+                        Change Size
+                    </button>
+                    <button class="btn" onclick="resetStyle()">Reset</button>
+                    <div
+                        class="color-demo"
+                        id="colorDemo"
+                        style="background-color: #667eea"
+                    ></div>
+                    <div class="code-snippet">
+                        element.style.backgroundColor = randomColor;
+                        element.style.transform = 'scale(1.5)';
+                    </div>
+                </div>
+
+                <!-- Element Creation Demo -->
+                <div class="demo-card">
+                    <h3>➕ Creating Elements</h3>
+                    <p>Dynamically create and add new HTML elements</p>
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            id="listInput"
+                            placeholder="Add list item..."
+                        />
+                        <button class="btn" onclick="addListItem()">
+                            Add Item
+                        </button>
+                        <button class="btn" onclick="clearList()">
+                            Clear All
+                        </button>
+                    </div>
+                    <div class="list-demo" id="listContainer">
+                        <div class="list-item">
+                            Sample item (hover me!)
+                            <button
+                                class="remove-btn"
+                                onclick="this.parentElement.remove()"
+                            >
+                                ×
+                            </button>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        const newItem = document.createElement('div');
+                        newItem.textContent = itemText;
+                        container.appendChild(newItem);
+                    </div>
+                </div>
+
+                <!-- Event Handling Demo -->
+                <div class="demo-card">
+                    <h3>⚡ Event Handling</h3>
+                    <p>Respond to user interactions with event listeners</p>
+                    <button class="btn" id="clickCounter">
+                        Click me! (0 clicks)
+                    </button>
+                    <button class="btn" onclick="resetCounter()">
+                        Reset Counter
+                    </button>
+                    <div class="output" id="eventOutput">
+                        Click the button above to see events in action!
+                    </div>
+                    <div class="code-snippet">
+                        element.addEventListener('click', function() {
+                        counter++; updateDisplay(); });
+                    </div>
+                </div>
+
+                <!-- Class Manipulation Demo -->
+                <div class="demo-card">
+                    <h3>🏷️ Class Manipulation</h3>
+                    <p>Add, remove, and toggle CSS classes</p>
+                    <button class="btn" onclick="toggleHighlight()">
+                        Toggle Highlight
+                    </button>
+                    <button class="btn" onclick="addMultipleClasses()">
+                        Add Classes
+                    </button>
+                    <button class="btn" onclick="removeAllClasses()">
+                        Remove Classes
+                    </button>
+                    <div class="output" id="classDemo">
+                        This text can be highlighted and styled
+                    </div>
+                    <div class="code-snippet">
+                        element.classList.toggle('highlight');
+                        element.classList.add('class1', 'class2');
+                        element.classList.remove('highlight');
+                    </div>
+                </div>
+
+                <!-- Form Manipulation Demo -->
+                <div class="demo-card">
+                    <h3>📋 Form Interaction</h3>
+                    <p>Work with form elements and validation</p>
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            id="nameInput"
+                            placeholder="Your name"
+                        />
+                        <input
+                            type="email"
+                            id="emailInput"
+                            placeholder="Your email"
+                        />
+                    </div>
+                    <button class="btn" onclick="validateForm()">
+                        Validate Form
+                    </button>
+                    <button class="btn" onclick="clearForm()">
+                        Clear Form
+                    </button>
+                    <div class="output" id="formOutput">
+                        Form validation results will appear here
+                    </div>
+                    <div class="code-snippet">
+                        const name = document.getElementById('nameInput').value;
+                        if (name.length < 2) { showError('Name too short'); }
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <h3>🎯 Key DOM Manipulation Concepts</h3>
+                <p>
+                    ✅ getElementById, querySelector • ✅ textContent, innerHTML
+                    • ✅ style properties • ✅ classList methods • ✅
+                    createElement, appendChild • ✅ addEventListener • ✅ form
+                    validation
+                </p>
+            </div>
+        </div>
+
+        <script>
+            // Global variables
+            let clickCount = 0;
+            let currentScale = 1;
+
+            // Text manipulation function
+            function changeText() {
+                const input = document.getElementById('textInput');
+                const output = document.getElementById('textOutput');
+
+                if (input.value.trim() === '') {
+                    output.textContent = 'Please enter some text!';
+                    output.style.color = '#dc3545';
+                } else {
+                    output.textContent = input.value;
+                    output.style.color = '#764ba2';
+                    input.value = '';
+                }
+            }
+
+            // Style manipulation functions
+            function changeColor() {
+                const demo = document.getElementById('colorDemo');
+                const colors = [
+                    '#ff6b6b',
+                    '#4ecdc4',
+                    '#45b7d1',
+                    '#f9ca24',
+                    '#6c5ce7',
+                    '#a29bfe',
+                    '#fd79a8',
+                    '#00b894'
+                ];
+                const randomColor =
+                    colors[Math.floor(Math.random() * colors.length)];
+                demo.style.backgroundColor = randomColor;
+            }
+
+            function changeSize() {
+                const demo = document.getElementById('colorDemo');
+                currentScale = currentScale === 1 ? 1.5 : 1;
+                demo.style.transform = `scale(${currentScale})`;
+            }
+
+            function resetStyle() {
+                const demo = document.getElementById('colorDemo');
+                demo.style.backgroundColor = '#667eea';
+                demo.style.transform = 'scale(1)';
+                currentScale = 1;
+            }
+
+            // Element creation functions
+            function addListItem() {
+                const input = document.getElementById('listInput');
+                const container = document.getElementById('listContainer');
+
+                if (input.value.trim() === '') {
+                    alert('Please enter some text for the list item!');
+                    return;
+                }
+
+                const newItem = document.createElement('div');
+                newItem.className = 'list-item';
+                newItem.innerHTML = `${input.value} <button class="remove-btn" onclick="this.parentElement.remove()">×</button>`;
+
+                container.appendChild(newItem);
+                input.value = '';
+            }
+
+            function clearList() {
+                const container = document.getElementById('listContainer');
+                container.innerHTML =
+                    '<div class="list-item">Sample item (hover me!) <button class="remove-btn" onclick="this.parentElement.remove()">×</button></div>';
+            }
+
+            // Event handling setup
+            document
+                .getElementById('clickCounter')
+                .addEventListener('click', function () {
+                    clickCount++;
+                    this.textContent = `Click me! (${clickCount} clicks)`;
+
+                    const output = document.getElementById('eventOutput');
+                    output.textContent = `Button clicked ${clickCount} times! Event triggered successfully.`;
+
+                    // Add some visual feedback
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 100);
+                });
+
+            function resetCounter() {
+                clickCount = 0;
+                document.getElementById('clickCounter').textContent =
+                    'Click me! (0 clicks)';
+                document.getElementById('eventOutput').textContent =
+                    'Click the button above to see events in action!';
+            }
+
+            // Class manipulation functions
+            function toggleHighlight() {
+                const demo = document.getElementById('classDemo');
+                demo.classList.toggle('highlight');
+            }
+
+            function addMultipleClasses() {
+                const demo = document.getElementById('classDemo');
+                demo.style.fontWeight = 'bold';
+                demo.style.textDecoration = 'underline';
+                demo.style.color = '#764ba2';
+            }
+
+            function removeAllClasses() {
+                const demo = document.getElementById('classDemo');
+                demo.classList.remove('highlight');
+                demo.style.fontWeight = 'normal';
+                demo.style.textDecoration = 'none';
+                demo.style.color = '#764ba2';
+            }
+
+            // Form validation functions
+            function validateForm() {
+                const name = document.getElementById('nameInput').value;
+                const email = document.getElementById('emailInput').value;
+                const output = document.getElementById('formOutput');
+
+                let messages = [];
+
+                if (name.length < 2) {
+                    messages.push('❌ Name must be at least 2 characters long');
+                } else {
+                    messages.push('✅ Name is valid');
+                }
+
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    messages.push('❌ Please enter a valid email address');
+                } else {
+                    messages.push('✅ Email is valid');
+                }
+
+                output.innerHTML = messages.join('<br>');
+
+                if (messages.every(msg => msg.includes('✅'))) {
+                    output.style.background = '#d4edda';
+                    output.style.color = '#155724';
+                } else {
+                    output.style.background = '#f8d7da';
+                    output.style.color = '#721c24';
+                }
+            }
+
+            function clearForm() {
+                document.getElementById('nameInput').value = '';
+                document.getElementById('emailInput').value = '';
+                const output = document.getElementById('formOutput');
+                output.textContent = 'Form validation results will appear here';
+                output.style.background = '#f8f9fa';
+                output.style.color = '#764ba2';
+            }
+
+            // Add some interactive effects on page load
+            window.addEventListener('load', function () {
+                console.log('🚀 DOM Manipulation Demo loaded successfully!');
+                console.log(
+                    'Try interacting with the different sections to see JavaScript in action!'
+                );
+
+                // Add a subtle animation to cards
+                const cards = document.querySelectorAll('.demo-card');
+                cards.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(30px)';
+                        card.style.transition = 'all 0.6s ease';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100);
+                    }, index * 100);
+                });
+            });
+
+            // Allow Enter key to trigger actions
+            document
+                .getElementById('textInput')
+                .addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') changeText();
+                });
+
+            document
+                .getElementById('listInput')
+                .addEventListener('keypress', function (e) {
+                    if (e.key === 'Enter') addListItem();
+                });
+        </script>
+    </body>
+</html>
