@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+  }
+  
+  .editbtn {
+    background-color: #2759e3;
+    padding: 7px;
+    color: white;
+    border-radius: 10px;
+  }
+  #cabecalho {
+    background-color: #2759e3;
+    padding: 15px 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  div:first-of-type {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  #input {
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    width: 250px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  #input:focus {
+    border-color: #2759e3;
+  }
+  
+  #addbutton {
+    padding: 10px 16px;
+    border-radius: 12px;
+    background-color: #2759e3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #addbutton:hover {
+    background-color: #2759e3;
+  }
+  
+  #listodo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+  }
+  
+  .todobox {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todobox h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .todobox p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .todobox input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  #modo {
+    padding: 10px 16px;
+    border-radius: 12px;
+    background-color: #2759e3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #modo:hover {
+    background-color: #2759e3;
+  }
+  
